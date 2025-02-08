@@ -8,6 +8,7 @@ section{
     display: flex;
     align-items: center;
     justify-content: center;
+    /* width: 80%; */
 }
 
 
@@ -15,13 +16,15 @@ section{
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 1rem;
+    
     /* width: 500px;
     padding: 20px; */
 }
 
 
 h1{
-    font-size: 40px;
+    font-size: 3rem;
     /* text-align: center; */
 }
 
@@ -34,12 +37,14 @@ h1{
     border-bottom: 5px solid #181818;
     padding: 20px;
     border-radius: 5px;
-    width: 550px;
+    /* width: 550px; */
+    width: 100%;
 }
 
 .password{
     
-    width: 300px;
+    /* width: 300px; */
+    width: 70%;
     padding: 5px;
     border: none;
     outline: none;
@@ -52,7 +57,8 @@ h1{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 150px;
+    /* width: 150px; */
+    width: 30%;
 }
 
 i{
@@ -64,18 +70,23 @@ i{
 
 
 .password-properties{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-color: aliceblue;
     margin: 10px;
     border-bottom: 5px solid #181818;
     padding: 20px;
     border-radius: 5px;
-    width: 550px;
+    width: 100%;
 }
 
 .custom-properties{
 
     display: flex;
-    justify-content: space-around;
+    gap: 5rem;
+    /* justify-content: space-between; */
     /* align-items: center; */
    
 }
@@ -90,7 +101,7 @@ i{
     height: 20px;
     width: 50px;
     font-size: large;
-    padding: 10px;
+    padding: 1rem;
 }
 
 #numbers{
@@ -98,7 +109,7 @@ i{
 }
 
 .button{
-    font-size: 20px;
+    font-size: 1.7rem;
     margin: 10px;
     padding: 10px 20px;
     background-color: #181818;
@@ -107,4 +118,50 @@ i{
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+}
+
+@media (min-width: 768px){
+    .container{
+        max-width: 700px;
+    }
+}
+
+@media (min-width: 576px) and (max-width:768px){
+    .container{
+        max-width: 768px;
+    }
+
+    h1{
+        font-size: 2rem;
+    }
+
+    .custom-properties{
+
+        display: flex;
+        gap: 2rem;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+       
+    }
+}
+
+@media (max-width: 576px){
+    .container{
+        max-width: 300px;
+    }
+
+    h1{
+        font-size: 1.5rem;
+    }
+
+    .custom-properties{
+
+        display: flex;
+        gap: 2rem;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+       
+    }
 }
