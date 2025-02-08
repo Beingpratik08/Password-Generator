@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generate Your Password</title>
+    <link rel="stylesheet" href="Style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+<body>
+
+    <section>
+
+        <div class="container">
+            <h1>Generate Your Password</h1>
+
+            <div class="password-box">
+                <input type="text" class="password" id="passwordValue"></input>
+                <span class="icon">
+                    <i class='bx bx-copy' id="copy" onclick="copyPassword()"></i>
+                    <i class='bx bx-refresh refresh' id="refresh" onclick= "generateNewPassword()"></i>
+                </span>
+            </div>
+
+            <div class="password-properties">
+                <h1>Customize Your Password</h1>
+
+                <div class="custom-properties">
+
+                    <div class="length">
+                        <label for="length">Password Length</label><br>
+                        <div>
+                        <input type="number" id="textInput" value="" min="1" max="50" onchange="updatePasswordLength()">
+                        <!-- <input type="range" id="rangeInput" name="rangeInput" min="1" max="50"> -->
+                        </div>
+                    </div>
+
+                    <div class="characters">
+                        
+                        <label for="characters">Include Characters</label><br>
+
+                        <input type="checkbox" id="uppercase" name="uppercase" checked="true">
+                        <label for="lowercase">UpperCase </label><br>
+
+                        <input type="checkbox" id="lowercase" name="lowercase" checked="true">
+                        <label for="lowercase"> Lowercase </label><br>
+
+                        <input type="checkbox" id="numbers" name="numbers" checked="true">
+                        <label for="numbers"> Numbers</label><br>
+
+                        <input type="checkbox" id="symbols" name="symbols" checked="true">
+                        <label for="special"> Special Characters</label>
+                        
+                    </div>
+                </div>
+        
+            </div>
+
+            
+            <button  class="button" id="generatePassword" onclick="generateNewPassword()">Generate Password</button>
+        
+        </div>
+
+    </section>
+
+
+    <script src="./index.js"></script>
+    
+</body>
+</html>

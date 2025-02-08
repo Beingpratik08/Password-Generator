@@ -1,0 +1,110 @@
+
+body{
+    background-color: rgb(166, 243, 217);
+    font-size: 25px;
+}
+
+section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* width: 500px;
+    padding: 20px; */
+}
+
+
+h1{
+    font-size: 40px;
+    /* text-align: center; */
+}
+
+.password-box{
+    background-color: aliceblue;
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 5px solid #181818;
+    padding: 20px;
+    border-radius: 5px;
+    width: 550px;
+}
+
+.password{
+    
+    width: 300px;
+    padding: 5px;
+    border: none;
+    outline: none;
+    font-size: 25px;
+    background-color: transparent;
+    border-bottom: 1px solid #181818;
+}
+
+.icon{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 150px;
+}
+
+i{
+    margin-right: 10px;
+    font-size: 40px;
+    color: #181818;
+    cursor: pointer;
+}
+
+
+.password-properties{
+    background-color: aliceblue;
+    margin: 10px;
+    border-bottom: 5px solid #181818;
+    padding: 20px;
+    border-radius: 5px;
+    width: 550px;
+}
+
+.custom-properties{
+
+    display: flex;
+    justify-content: space-around;
+    /* align-items: center; */
+   
+}
+
+.length{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#textInput{
+    height: 20px;
+    width: 50px;
+    font-size: large;
+    padding: 10px;
+}
+
+#numbers{
+    font-size: larger;
+}
+
+.button{
+    font-size: 20px;
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #181818;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
